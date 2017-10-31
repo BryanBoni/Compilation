@@ -8,7 +8,7 @@ import re
 import collections
 
 
-ALL_FILES = glob.glob('./testfiles/foo*.txt')
+ALL_FILES = glob.glob('./testfiles/*.txt')
 
 # only test programs of thess shapes!
 #ALL_FILES = glob.glob('./testfiles/test*.txt') + glob.glob('./testfiles/bad*.txt')
