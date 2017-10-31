@@ -1,10 +1,10 @@
-#Compiling project
-	Here is the readme about 
-	all you need to know about this project.
+# Compiling project
+Here is the readme about 
+all you need to know about this project.
 
 
 ## Developer 
-	Bryan Boni 11405588
+#### Bryan Boni 11405588
 
 
 
@@ -16,42 +16,48 @@
 	EXPR  		-> EXPR + TARTE
 	EXPR  		-> TARTE
 	TARTE 		-> TARTE * FRITE
-	TARTE       -> TARTE / FRITE
-	TARTE       -> FRITE
-	FRITE       -> id
-	FRITE       -> int
-	FRITE       -> (EXPR)
-	FRITE       -> -FRITE
-	AFFECTATION -> id = EXPR
+	TARTE           -> TARTE / FRITE
+	TARTE       	-> FRITE
+	FRITE       	-> id
+	FRITE       	-> int
+	FRITE       	-> (EXPR)
+	FRITE       	-> -FRITE
+	AFFECTATION     -> id = EXPR
 
 ### The code
-<p>
-	- the operations ' * ' and '/' are create at the end of
-	the grammar in order to be calculated first, 
-	following the rules of mathematics 
+- the operations ' * ' and '/' are create at the end of
+the grammar in order to be calculated first, 
+following the rules of mathematics.
 
-	- right now the code does not treat doubles, 
-	only integers, even if it can treat division, 
-	it will return an integer
-</p>
+- right now the code does not treat doubles, 
+only integers, even if it can treat division,
+it will return an integer.
 
 ## How to use it
+### Installation and first test
+Open a prompt on the root of the project and type:
+	
+	* $ make ; python3 arit2.py testfiles/test01.txt
 ### Execution
-	Open a prompt on the root of the project and tape:
-	- $ make ; python3 arit2.py testfiles/projectTest01.txt
-### To do your own tests
-	Go on the folder "testfiles/" and create a text file 
-	and when you tape your comand to run the code, change projectTest01.txt"
-	by your text file, like this:
-	- $ make ; python3 arit2.py testfiles/YourFile.txt
+In order to use the application type:
 
+	* $ python3 arit2.py /dev/stdin
+(to quit and see the results, use ctr+D twice)
+
+### To do your own tests
+Go on the folder "testfiles/" and create a text file 
+and when you tape your comand to run the code, change projectTest01.txt"
+by your text file, like this:
+
+	* $ make ; python3 arit2.py testfiles/YourFile.txt
+or to exexute more than one file type:
+
+	* $ make tests
 	
 ## Design choices
 
 
 ## Bugs 
 ### "normal" Bugs
-<p>
-	- Dividing by 0 shutdown the application
-	- 
-</p> 
+- Dividing by 0 shutdown the application
+-  
