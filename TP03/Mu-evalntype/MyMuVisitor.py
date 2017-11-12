@@ -155,9 +155,9 @@ class MyMuVisitor(MuVisitor):
         # expr bool, then stat-block
         # exec the stat-block and return true if the cond evaluates to true
         # else return False.
-        val = self.visit(ctx.expr)
+        val = self.visit(ctx.expr())
         if val == 1: #true
-            self.visit(ctx.stat_block)
+            self.visit(ctx.stat_block())
         return val
 
     '''
@@ -172,7 +172,7 @@ class MyMuVisitor(MuVisitor):
             if val == 1:
                 break;
         if val == 0:
-            self.visit(ctx.stat_block)
+            self.visit(ctx.stat_block())
 
 
     def visitWhileStat(self, ctx):
