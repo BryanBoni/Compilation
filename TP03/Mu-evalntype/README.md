@@ -8,15 +8,12 @@ how to use the desing patter visitor apply to a grammar.
 
 ## Contents
 The folowing archive contain:
-	- "../ex/" contains example files and unit test (for the functions that 
-		as been added in "MyMuVisitor.py"),
-	- Mu.g4 : the gammar for the Mu language,
-	- MyMuVisitor.py : contains a code folowing the visitor pattern in order 
-		to add verification and behavior,
-	- MyMuTypingVisitor.py : same as MyMuVisitor with a Mu verificator goal 
-		for a given Mu file,
-	- Main.py,
-	- test_evaluator.py,
+- "../ex/" contains example files and unit test (for the functions that as been added in "MyMuVisitor.py"),
+- Mu.g4 : the gammar for the Mu language,
+- MyMuVisitor.py : contains a code folowing the visitor pattern in order to add verification and behavior,
+- MyMuTypingVisitor.py : same as MyMuVisitor with a Mu verificator goal for a given Mu file,
+- Main.py,
+- test_evaluator.py,
 
 
 ## Code functionnality
@@ -31,8 +28,8 @@ The folowing archive contain:
 
 
 ## how to use it
-make run FOO=../ex/test01.mu for a single run
-make tests to test all the file in ex/ according to EXPECTED results 
+- make run FOO=../ex/test01.mu for a single run
+-make tests to test all the file in ex/ according to EXPECTED results 
 (you can select the files you want to test by modifying the variable ALL\_FILES in test\_evaluator.py)
 
 ## Design choices
