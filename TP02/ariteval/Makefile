@@ -1,6 +1,6 @@
 MAINFILE = arit2
 PACKAGE = Arit2
-MYNAME = JohnDoe
+MYNAME = BryanBoni
 
 ifndef ANTLR4
 abort:

@@ -1,0 +1,4 @@
+1/0 ; 
+# EXPECTED
+# division by zero
+# EXITCODE 1

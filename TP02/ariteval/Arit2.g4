@@ -24,7 +24,8 @@ expr returns [INT output]:
 
 tarte returns [INT output]:
     t1=tarte '*' f1=frite {$output = $t1.output * $f1.output;}
-    | t1=tarte '/' f1=frite {$output = $t1.output / $f1.output;}
+    | t1=tarte '/' f1=frite 
+    {$output = $t1.output / $f1.output;}
     | f1=frite {$output = $f1.output;}
     ;
 
@@ -36,13 +37,12 @@ else:
     $output = idTab[$id1.text];}
     | INT {$output = (int) $INT.text;}
     | '(' expr ')' {$output = $expr.output;}
-    | '-' frite {$output = $frite.output;}
+    | '-' frite {$output = -$frite.output;}
     ;
 
 affectation :
     id1=ID '=' e1=expr {idTab[$id1.text]= $e1.output; print($id1.text + "now equals" + str($e1.output));}
     ;
-
 
 COMMENT: '#' ~[\r\n]* -> skip;
 

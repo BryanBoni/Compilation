@@ -442,7 +442,7 @@ class Arit2Parser ( Parser ):
                 self.match(Arit2Parser.T__2)
                 self.state = 70
                 localctx._frite = self.frite()
-                localctx.output =  localctx._frite.output
+                localctx.output =  -localctx._frite.output
                 pass
             else:
                 raise NoViableAltException(self)
