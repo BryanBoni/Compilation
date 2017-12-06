@@ -42,4 +42,4 @@ def fact(nb):
 		return nb*fact(nb-1)
 
 print(fact(3))
-help(fact)
+#help(fact)
